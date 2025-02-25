@@ -2,484 +2,326 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Justice</title>
-  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;500;600;700&family=Grand+Hotel&family=Luckiest+Guy&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
-  <link rel="stylesheet" href="./CSS/style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="icon" href="Img/img/symbol.jfif" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Hotel</title>
 </head>
 
 <body>
-  <header class="hero">
-    <nav class="navbar">
-      <div class="container d-lg-none">
-        <a class="navbar-brand fs-2 fw-bolder owner" href="#">Justice.</a>
-        <button type="button" class="btn" data-bs-toggle="offcanvas" data-bs-target="#mylist">
-          <i class="bi bi-list fs-1"></i>
+  <!--Header Section-->
+  <header class="">
+    <nav class="container py-2 d-md-flex justify-content-between">
+      <!--Nav Section-->
+      <div class="text-center align-self-center">
+        <p class="mb-1">
+          Call us today<a href="telto:+1 2345 6789" class="text-dark">
+            +1 2345 6789</a>
+        </p>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center px-md-3">
+          <i class="fa-brands fa-square-facebook fs-4 pe-1"></i>
+          <i class="fa-brands fa-square-twitter fs-4 pe-1"></i>
+          <i class="fa-brands fa-square-instagram fs-4 pe-1"></i>
+          <i class="fa-brands fa-square-youtube fs-4"></i>
+        </div>
+
+        <p class="m-0 align-self-center pe-md-3">
+          Paris, FR - 23<sup>c</sup>
+        </p>
+
+        <div class="d-flex align-items-center">
+          <img src="img/img/gb-flag.png" alt="gb-flag" class="img-fluid img-flag pe-1" />
+          <p class="m-0">English</p>
+        </div>
+      </div>
+    </nav>
+    <div class="border-bottom"></div>
+    <div class="container d-flex justify-content-between py-3" data-aos="fade-up" data-aos-duration="800">
+      <div>
+        <h1 class="fw-normal"><a href="" class="text-dark">Moliere</a></h1>
+      </div>
+      <div class="align-self-center border border-dark d-lg-none">
+        <!-- <p class="m-0 p-2"></p> -->
+        <div class="dropdown">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i> Menu
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Accommodation</a></li>
+            <li><a class="dropdown-item" href="#">Services</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li><a class="dropdown-item" href="#">Reservations</a></li>
+          </ul>
+        </div>
+      </div>
+      <ul class="d-lg-flex m-0 d-none three pe-5">
+        <li class="align-self-center">
+          <a class="text-dark" href="#">Accommodation</a>
+        </li>
+        <div class="dropdown align-self-center">
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Meeting &amp; Events</a></li>
+            <li><a class="dropdown-item" href="#">Restaurant</a></li>
+            <li><a class="dropdown-item" href="#">Weddings</a></li>
+            <li><a class="dropdown-item" href="#">Wellness</a></li>
+          </ul>
+        </div>
+        <li class="align-self-center pe-2">
+          <a class="text-dark" href="#">Blog</a>
+        </li>
+        <li class="align-self-center pe-2">
+          <a class="text-dark" href="#">Contact</a>
+        </li>
+        <button type="button" class="btn border border-dark rounded-0">
+          Reservations
         </button>
-        <div class="offcanvas offcanvas-end offcanvas-css d-xl-none" id="mylist">
-          <div class="offcanvas-header d-flex justify-content-end align-items-end mb-0">
-            <button class="btn-close py-3 d-md-none" data-bs-dismiss="offcanvas"></button>
-          </div>
-          <div class="offcanvas-body fs-4 fw-light w-50">
-            <ul class="nav flex-column">
-              <li class="nav-item"><a class="nav-link text-black active" href="">Home</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link text-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  Practice Areas
-                </a>
-                <ul class="dropdown-menu border-0 fs-6">
-                  <li><a class="dropdown-item text-black ms-3 pb-3 fw-light" href="#">Elements</a></li>
-                  <li><a class="dropdown-item text-black ms-3 pb-3 fw-light" href="#">Menu Two</a></li>
-                  <li><a class="dropdown-item text-black ms-3 pb-3 fw-light" href="#">Menu Three</a></li>
-                </ul>
-              </li>
-              <li class="nav-item"><a class="nav-link text-secondary" href="">Services</a></li>
-              <li class="nav-item"><a class="nav-link text-secondary" href="">Attorneys</a></li>
-              <li class="nav-item"><a class="nav-link text-secondary" href="">About</a></li>
-              <li class="nav-item"><a class="nav-link text-secondary" href="">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="container d-none d-lg-flex justify-content-between px-3 xl-nav">
-        <a class="navbar-brand fs-1 fw-bolder owner" href="#">Justice</a>
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link text-black active" href="">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link text-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              Practice Areas
-            </a>
-            <ul class="dropdown-menu border-0 fs-6">
-              <li><a class="dropdown-item ms-3 pb-3 fw-light" href="#">Elements</a></li>
-              <li><a class="dropdown-item ms-3 pb-3 fw-light" href="#">Menu Two</a></li>
-              <li><a class="dropdown-item ms-3 pb-3 fw-light" href="#">Menu Three</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link text-secondary" href="">Services</a></li>
-          <li class="nav-item"><a class="nav-link text-secondary" href="">Attorneys</a></li>
-          <li class="nav-item"><a class="nav-link text-secondary" href="">About</a></li>
-          <li class="nav-item"><a class="nav-link text-secondary" href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="one ps-3 ps-md-5 d-flex justify-content-end align-items-center w-100" data-aos="fade-left" data-aos-duration="1500">
-        <div class="col-md-5">
-          <h1 class="fw-bold d-inline">We Fight<h1 class="fw-normal text-dark d-inline ps-2">For Your Right</h1>
-          </h1>
-          <p class="pt-3 fs-5">Another Cool free template by the fine folks at <span
-              class="common text-decoration-underline">Colorlib</span>.</p>
-          <div class="mt-4">
-            <button type="button" class="button btn border-2 px-4 py-2 rounded-pill fw-bolder text-light">FREE
-              CONSULTATION</button>
-          </div>
-        </div>
-      </div>
-    </nav>   
-        
+      </ul>
+    </div>
+    <div class="border-bottom"></div>
   </header>
 
-  <section class="main">
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-duration="1500">
-          <div class="pt-lg-5">
-            <h1 class=" text-light fw-normal">Our <span class="common  fw-bold">Practice Areas</span></h1>
-            <p class="pt-2 ps-md-5">Far far away, behind the word mountains, far from the countries Vokalia and
-              Consonantia,
-              there live the
-              blind texts. Separated they live in.</p>
-            <span class="ps-md-5 d-inline-block">Separated they live in Bookmarksgrove right at the coast of the
-              Semantics, a large language
-              ocean.</span>
-            <div class="p-lg-5 pt-4 ps-md-5">
-              <button type="button" class="btn border-2 px-4 py-2 rounded-pill fw-bolder text-light">LEARN MORE</button>
-            </div>
-          </div>
-        </div>
-        <div class="first col-12 col-lg-6" data-aos="fade-left" data-aos-duration="1500">
-          <div class="d-flex pt-5">
-            <div>
-              <i class="bi bi-bank rounded-circle bg-secondary old d-block pt-2  fs-3 text-center"></i>
-            </div>
-            <div class="ps-3">
-              <span class="common d-block">Banking and Finance Law</span>
-              <span>Far far away, behind the word mountains, far from the countries</span>
-            </div>
-          </div>
-          <div class="d-flex pt-4">
-            <div>
-              <i class="bi bi-people-fill rounded-circle bg-secondary old d-block pt-2 text-center fs-3"></i>
-            </div>
-            <div class="ps-3">
-              <span class="common d-block">Commercial Law</span>
-              <span>Far far away, behind the word mountains, far from the countries</span>
-            </div>
-          </div>
-          <div class="d-flex pt-4 ">
-            <div>
-              <i class="bi bi-person-lines-fill rounded-circle bg-secondary old d-block pt-2 text-center fs-3"></i>
-            </div>
-            <div class="ps-3">
-              <span class="common d-block">Corporate Law </span>
-              <span>Far far away, behind the word mountains, far from the countries</span>
-            </div>
-          </div>
-          <div class="d-flex pt-4 ">
-            <div>
-              <i class="bi bi-crosshair rounded-circle bg-secondary old d-block pt-2 text-center fs-3"></i>
-            </div>
-            <div class="ps-3">
-              <span class="common d-block">Criminal Law </span>
-              <span>Far far away, behind the word mountains, far from the countries</span>
-            </div>
-          </div>
-          <span class="common d-block pt-5 ps-3">More Practice Areas <i
-              class="bi bi-arrow-right ps-2 text-light"></i></span>
-        </div>
-      </div>
-      <div class="row pt-4 pt-lg-5">
-        <div class="row pt-5 col-lg-5" data-aos="fade-up" data-aos-duration="1500">
-          <div class="col-10">
-            <h1 class="common  fw-bold">50 Years <span class=" text-light fw-normal">Of Experience in Various
-                Cases</span>
-            </h1>
-          </div>
-        </div>
-        <div class="row pb-5 col-lg-7">
-          <div class="col-12 col-md-6 col-lg-6 pt-3" data-aos="fade-up" data-aos-duration="1500">
-            <h1 class="counter two common fw-light">90<span class=" text-light fw-normal">+</span></h1>
-            <span class="text-light fw-bold d-block">Awards</span>
-            <span>Separated they live in Bookmarksgrove right at the coast of the Semantics</span>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6 pt-3" data-aos="fade-up" data-aos-duration="1500">
-            <h1 class="counter two common fw-light">3K<span class=" text-light fw-normal">+</span></h1>
-            <span class="text-light fw-bold d-block">Cases Wins</span>
-            <span>Separated they live in Bookmarksgrove right at the coast of the Semantics</span>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6 pt-3" data-aos="fade-up" data-aos-duration="1500">
-            <h1 class="counter two common fw-light">2K<span class=" text-light fw-normal">+</span></h1>
-            <span class="text-light fw-bold d-block">Clients</span>
-            <span>Separated they live in Bookmarksgrove right at the coast of the Semantics</span>
-          </div>
-          <div class="col-12 col-md-6 col-lg-6 pt-3" data-aos="fade-up" data-aos-duration="1500">
-            <h1 class="counter two common fw-light">200<span class=" text-light fw-normal">+</span></h1>
-            <span class="text-light fw-bold d-block">Attorneys</span>
-            <span>Separated they live in Bookmarksgrove right at the coast of the Semantics</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="clients pt-5">
-    <div class="container">
-      <div class="row">
-        <div class="pb-4">
-          <h1 class="common  fw-bold">Happy<span class=" text-light fw-normal ps-2">Clients</span></h1>
-        </div>
-      </div>
-    </div>
-
-    <section class="carousel">
-      <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
-        <div class=" carousel-inner px-3 px-md-4 py-3">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="bg-light mx-auto  px-4 pt-3 pb-5 clip">
-                  <span class="text-dark d-block">Far far away, behind the word mountains, far from the countries
-                    Vokalia
-                    and Consonantia, there live the
-                    blind texts. Separated they live in. Separated they live in Bookmarksgrove right at the coast of the
-                    Semantics, a large language ocean.</span>
-                </div>
-                <div class="d-flex most">
-                  <div class="">
-                    <img src="./Images/illustration/person_1 (2).jpg" alt="" class="official rounded-circle me-3">
-                  </div>
-                  <div class="">
-                    <span class="text-light d-block">Carl Anderson</span>
-                    <span class="text-secondary d-block">CEO,Co-Founder</span>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="col-lg-6 d-none d-lg-block">
-                <div class="bg-light mx-auto  px-4 pt-3 pb-5 clip">
-                  <span class="text-dark d-block">Far far away, behind the word mountains, far from the countries
-                    Vokalia
-                    and Consonantia, there live the
-                    blind texts. Separated they live in. Separated they live in Bookmarksgrove right at the coast of the
-                    Semantics, a large language ocean.</span>
-                </div>
-                <div class="d-flex most">
-                  <div class="">
-                    <img src="./Images/illustration/person_2 (2).jpg" alt="" class="official rounded-circle me-3">
-                  </div>
-                  <div class="">
-                    <span class="text-light d-block">Carl Anderson</span>
-                    <span class="text-secondary d-block">CEO,Co-Founder</span>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="bg-light mx-auto  px-4 pt-3 pb-5 clip">
-                  <span class="text-dark d-block">Far far away, behind the word mountains, far from the countries
-                    Vokalia
-                    and Consonantia, there live the
-                    blind texts. Separated they live in. Separated they live in Bookmarksgrove right at the coast of the
-                    Semantics, a large language ocean.</span>
-                </div>
-                <div class="d-flex most">
-                  <div class="">
-                    <img src="./Images/illustration/person_3 (2).jpg" alt="" class="official rounded-circle me-3">
-                  </div>
-                  <div class="">
-                    <span class="text-light d-block">Carl Anderson</span>
-                    <span class="text-secondary d-block">CEO,Co-Founder</span>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="col-lg-6 d-none d-lg-block">
-                <div class="bg-light mx-auto  px-4 pt-3 pb-5 clip">
-                  <span class="text-dark d-block">Far far away, behind the word mountains, far from the countries
-                    Vokalia
-                    and Consonantia, there live the
-                    blind texts. Separated they live in. Separated they live in Bookmarksgrove right at the coast of the
-                    Semantics, a large language ocean.</span>
-                </div>
-                <div class="d-flex most">
-                  <div class="">
-                    <img src="./Images/illustration/person_1 (2).jpg" alt="" class="official rounded-circle me-3">
-                  </div>
-                  <div class="">
-                    <span class="text-light d-block">Carl Anderson</span>
-                    <span class="text-secondary d-block">CEO,Co-Founder</span>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="bg-light mx-auto  px-4 pt-3 pb-5 clip">
-                  <span class="text-dark d-block">Far far away, behind the word mountains, far from the countries
-                    Vokalia
-                    and Consonantia, there live the
-                    blind texts. Separated they live in. Separated they live in Bookmarksgrove right at the coast of the
-                    Semantics, a large language ocean.</span>
-                </div>
-                <div class="d-flex most">
-                  <div class="">
-                    <img src="./Images/illustration/person_2 (2).jpg" alt="" class="official rounded-circle me-3">
-                  </div>
-                  <div class="">
-                    <span class="text-light d-block">Carl Anderson</span>
-                    <span class="text-secondary d-block">CEO,Co-Founder</span>
-                  </div>
-                </div>
-
-
-              </div>
-              <div class="col-lg-6 d-none d-lg-block">
-                <div class="bg-light mx-auto  px-4 pt-3 pb-5 clip">
-                  <span class="text-dark d-block">Far far away, behind the word mountains, far from the countries
-                    Vokalia
-                    and Consonantia, there live the
-                    blind texts. Separated they live in. Separated they live in Bookmarksgrove right at the coast of the
-                    Semantics, a large language ocean.</span>
-                </div>
-                <div class="d-flex most">
-                  <div class="">
-                    <img src="./Images/illustration/person_3 (2).jpg" alt="" class="official rounded-circle me-3">
-                  </div>
-                  <div class="">
-                    <span class="text-light d-block">Carl Anderson</span>
-                    <span class="text-secondary d-block">CEO,Co-Founder</span>
-                  </div>
-                </div>
-
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <button class="carousel-control-prev position-absolute top-50 arrow" type="button"
-        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-        <i class="bi bi-arrow-left-square-fill fs-1 ps-5"></i>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next position-absolute top-50 arrow" type="button"
-        data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-        <i class="bi bi-arrow-right-square-fill fs-1 pe-5"></i>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </section>
-
-  </section>
-
-  <section class="expertise pt-5">
-    <div class="container">
-      <div class="pb-5">
-        <h1 class=" text-light fw-normal ps-2">More<span class="common  fw-bold ps-2">Expertise</span></h1>
-      </div>
-      <div class="container">
-        <div class="row pb-5">
-          <div class="col-md-6 col-lg-3" data-aos="fade-right"  data-aos-duration="1200">
-            <div class="bg-light px-4 pt-3 py-3 rounded-3 mb-4">
-              <div>
-                <i class="bi bi-briefcase rounded-circle button old d-block pt-3  fs-4 text-center text-light"></i>
-              </div>
-              <h3 class="fw-normal fs-6 pt-3 common w-50">Labor and Employment</h3>
-              <p class="text-secondary">Separated they live in. Separated they live in Bookmarksgrove right at the coast
-                of the
-                Semantics, a large language ocean.</p>
-              <span class="text-dark">Learn More<i class="bi bi-arrow-right ps-3 text-dark"></i></span>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="1500">
-            <div class="bg-light  px-4 pt-3 py-3 rounded-3 mb-4">
-              <div>
-                <i
-                  class="bi bi-arrow-down-left-circle-fill rounded-circle button old d-block pt-3  fs-4 text-center text-light"></i>
-              </div>
-              <h3 class="fw-normal fs-6 pt-3 common new">Corporate &amp; Civil Litigation</h3>
-              <p class="text-secondary">Separated they live in. Separated they live in Bookmarksgrove right at the coast
-                of the
-                Semantics, a large language ocean.</p>
-              <span class="text-dark">Learn More<i class="bi bi-arrow-right ps-3 text-dark"></i></span>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="2000">
-            <div class="bg-light  px-4 pt-3 py-3 rounded-3 mb-4">
-              <div>
-                <i class="bi bi-crosshair rounded-circle button old d-block pt-3  fs-4 text-center text-light"></i>
-              </div>
-              <h3 class="fw-normal fs-6 pt-3 common new">Intellectual Proerty Law</h3>
-              <p class="text-secondary">Separated they live in. Separated they live in Bookmarksgrove right at the coast
-                of the
-                Semantics, a large language ocean.</p>
-              <span class="text-dark">Learn More<i class="bi bi-arrow-right ps-3 text-dark"></i></span>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-right" data-aos-duration="2500">
-            <div class="bg-light  px-4 pt-3 py-3 rounded-3 mb-4">
-              <div>
-                <i class="bi bi-gender-female rounded-circle button old d-block pt-3  fs-4 text-center text-light"></i>
-              </div>
-              <h3 class="fw-normal fs-6 pt-3 common new">Criminal Prosecution and Defence</h3>
-              <p class="text-secondary">Separated they live in. Separated they live in Bookmarksgrove right at the coast
-                of the
-                Semantics, a large language ocean.</p>
-              <span class="text-dark">Learn More<i class="bi bi-arrow-right ps-3 text-dark"></i></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="container">
-      <div class="last rounded-3">
-        <div class="row align-items-center new-one">
-          <div class="text-center">
-            <h1 class="text-light fw-normal three">Let's get started. Call us Now for a Free Consultation</h1>
-            <div class="pt-3">
-              <button type="button" class="button btn border-2 px-4 py-2 rounded-pill fw-bolder text-light">CALL US
-                NOW</button>
-            </div>
+  <!--Main Section-->
+  <main>
+    <!--Cta Section-->
+    <section class="container py-5">
+      <div class="cta-sec" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="d-flex align-items-center justify-content-center py-5 h-100">
+          <div class="text-light text-center" data-aos="fade-up">
+            <h2 class="m-0 h1-font">In the heart of Paris</h2>
+            <h6 class="h2 pb-3 fs-5">Ready to explore the city?</h6>
+            <button type="button" class="btn border border-2 px-4 rounded-0 text-light">
+              Accommodation Options
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="footer">
-      <div class="container pt-5">
-        <div class="row pt-3 pb-2">
-          <ul class="list-unstyled col-lg-3">
-            <li class="text-light pb-2">Home</li>
-            <li class="common pb-2">About us</li>
-            <li class="common pb-2">Practice Area</li>
-            <li class="common pb-2">Services</li>
-            <li class="common pb-2">Attorneys</li>
-            <li class="common pb-2">Terms</li>
-            <li class="common pb-2">Privacy</li>
-          </ul>
+    <!--Beautiful Piece-->
+    <section class="container py-5">
+      <div class="text-center col-md-10 mx-auto" data-aos="fade-down" data-aos-duration="1500">
+        <h2 class="our fw-normal">A Beautiful Piece of French History</h2>
+        <h6 class="opacity-75 fw-normal fs-5 pb-2">Since 1932</h6>
+        <p class="fs-5 pb-4">
+          A holiday cottage, holiday home, or vacation property is
+          accommodation used for holiday vacations. Such properties are
+          typically small homes, such as cottages, that vacationers can rent
+          and run as if it were their own home for the duration of their stay.
+          The properties may be owned by those using them for a vacation, in
+          which case the term second home applies; or may be rented out to
+          holidaymakers through an agency.
+        </p>
+        <button type="button" class=" one btn border border-2 px-4 rounded-0 border-dark opacity-75">
+          Accommodation Options
+        </button>
+      </div>
+    </section>
 
-          <ul class="list-unstyled col-lg-3">
-            <li class="text-light pb-2">Practice Area</li>
-            <li class="common pb-2">Banking Law</li>
-            <li class="common pb-2">Commercial Law</li>
-            <li class="common pb-2">Corporate Law</li>
-            <li class="common pb-2">Family Law</li>
-            <li class="common pb-2">Media Law</li>
-          </ul>
-
-          <ul class="list-unstyled col-lg-3">
-            <li class="text-light pb-2">Services</li>
-            <li class="common pb-2">Labor Law</li>
-            <li class="common pb-2">Employment</li>
-            <li class="common pb-2">Property Law</li>
-            <li class="common pb-2">Prosecution</li>
-          </ul>
-
-          <ul class="list-unstyled col-lg-3">
-            <li class="text-light pb-2">Contact</li>
-            <li class="text-secondary pb-2">43 Raymouth Rd. Baltemoer, London <br> 3910</li>
-            <li class="common pb-2">+1(123)-456-7890</li>
-            <li class="common pb-2">+1(123)-456-7890</li>
-            <li class="common pb-2">info@mydomain.com</li>
-            <li class="text-light pb-2 pt-3">Connect</li>
-            <div class="d-flex pe-3 rounded-3 pb-5">
-              <i class="bi bi-instagram button text-light me-1 px-2 py-1 rounded-3"></i>
-              <i class="bi bi-twitter-x button text-light me-1 px-2 py-1 rounded-3"></i>
-              <i class="bi bi-facebook button text-light me-1 px-2 py-1 rounded-3"></i>
-              <i class="bi bi-linkedin button text-light me-1 px-2 py-1 rounded-3"></i>
-              <i class="bi bi-pinterest button text-light me-1 px-2 py-1 rounded-3"></i>
-              <i class="bi bi-dribbble button text-light me-1 px-2 py-1 rounded-3"></i>
-            </div>
-          </ul>
-
-          <div class="py-5">
-            <p class="text-secondary text-center">Copyright ©2024 All rights reserved | This template is made with <i
-                class="bi bi-heart-fill text-danger"></i> by <span class="common">Colorlib</span></p>
+    <!--Our Apartments-->
+    <section class="container py-5">
+      <div class="text-center pb-5">
+        <h2 class="our fw-normal">Our Apartments</h2>
+        <h5 class="fw-normal opacity-75">From $129/Night</h5>
+      </div>
+      <div class="d-md-flex justify-content-center container" data-aos="flip-up" data-aos-duration="1000">
+        <div class="family-sec col-md-5 text-center mb-5 p-5">
+          <div class="text-light py-lg-5">
+            <h3 class="fw-normal fs-4">Family Apartment</h3>
+            <h6 class="fw-normal pb-2">From $329/Night</h6>
+            <button type="button" class="two btn border border-2 px-4 border-light rounded-0 text-light">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="solo-sec col-md-5 text-center mb-3 p-5 mb-md-5 ms-md-5">
+          <div class="text-light py-lg-5">
+            <h3 class="fw-normal fs-4">Solo Apartment</h3>
+            <h6 class="fw-normal pb-2">From $359/Night</h6>
+            <button type="button" class=" two btn border border-2 px-4 border-light rounded-0 text-light">
+              Learn More
+            </button>
           </div>
         </div>
       </div>
     </section>
 
-  </section>
+    <!--Explore The City-->
+    <section>
+      <div class="text-center container" data-aos="fade-down" data-aos-duration="1500">
+        <h2 class="our fw-normal">Explore The City</h2>
+        <h5 class="fw-normal opacity-75 pb-3">Things to do in Paris</h5>
+        <p class="pb-5 fs-5">
+          A holiday cottage, holiday home, or vacation property is
+          accommodation used for holiday vacations. Such properties are
+          typically small homes, such as cottages, that vacationers can rent
+          and run as if it were their own home for the duration of their stay.
+          The properties may be owned by those using them for a vacation, in
+          which case the term second home applies; or may be rented out to
+          holidaymakers through an agency.
+        </p>
+      </div>
+      <div  data-aos="zoom-out" data-aos-duration="1000">
+        <div class="d-md-flex container justify-content-center">
+          <div class="my-img-1">
+            <img src="img/img/gallery_por01.jpg" alt="gallery_por01" class="img-fluid img-city" />
+          </div>
+          <div class="my-img">
+            <img src="Img/img/gallery_lan01.jpg" alt="gallery_lan01" class="img-fluid img-city1" />
+          </div>
+          <div class="my-img-1">
+            <img src="Img/img/gallery_por02.jpg" alt="gallery_por02" class="img-fluid img-city" />
+          </div>
+          <div class="my-img">
+            <img src="Img/img/gallery_lan02.jpg" alt="gallery_lan02" class="img-fluid img-city1" />
+          </div>
+        </div>
+        <div class="d-md-flex container justify-content-center">
+          <div class="my-img">
+            <img src="img/img/gallery_lan03.jpg" alt="gallery_lan03" class="img-fluid img-city1" />
+          </div>
+          <div class="my-img-1">
+            <img src="Img/img/gallery_por04.jpg" alt="gallery_por04" class="img-fluid img-city" />
+          </div>
+          <div class="my-img">
+            <img src="Img/img/gallery_lan04.jpg" alt="gallery_lan04" class="img-fluid img-city1" />
+          </div>
+          <div class="my-img-1">
+            <img src="Img/img/gallery_por03.jpg" alt="gallery_por03" class="img-fluid img-city" />
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--French Cuisine-->
+    <section class="py-5 container">
+      <div class="text-center pb-3">
+        <h2 class="our">French Cuisine</h2>
+        <h5 class="opacity-75">All Inclusive</h5>
+      </div>
+      <div  data-aos="zoom-in" data-aos-duration="1000">
+        <img src="img/img/bg_restaurant-1260x600-1.jpg" alt="bg_restaurant-1260x600-1" class="img-fluid" />
+      </div>
+      <div class="text-center pt-5" data-aos="fade-down" data-aos-duration="1500">
+        <p class="fs-5 pb-5">
+          A holiday cottage, holiday home, or vacation property is
+          accommodation used for holiday vacations. Such properties are
+          typically small homes, such as cottages, that vacationers can rent
+          and run as if it were their own home for the duration of their stay.
+          The properties may be owned by those using them for a vacation, in
+          which case the term second home applies; or may be rented out to
+          holidaymakers through an agency.
+        </p>
+        <button type="button" class="four btn border-dark rounded-0 border-2 px-4 opacity-75">
+          Accommodation Options
+        </button>
+      </div>
+    </section>
+
+    <!--Our Rooms-->
+    <section class="container py-5">
+      <div class="text-center pb-5">
+        <h2 class="our">Our Rooms</h2>
+        <h5 class="opacity-75">From only $79/Night</h5>
+      </div>
+      <div class="row justify-content-evenly"  data-aos="flip-down" data-aos-duration="1000">
+        <div class="single-img col-md-5 text-light py-lg-5 text-center mb-5 pb-4">
+          <h3 class="fs-4 pt-4">Standard Single</h3>
+          <h6>From $129/Night</h6>
+          <button type="button" class=" two btn border border-2 px-4 border-light rounded-0 text-light">
+            Learn More
+          </button>
+        </div>
+        <div class="double-img col-md-5 text-light py-lg-5 text-center mb-5 pb-4">
+          <h3 class="fs-4 pt-4">Standard Double</h3>
+          <h6>From $99/Night</h6>
+          <button type="button" class=" two btn border border-2 px-4 border-light rounded-0 text-light">
+            Learn More
+          </button>
+        </div>
+        <div class="family-img col-md-5 text-light py-lg-5 text-center mb-3 pb-5">
+          <h3 class="fs-4 pt-4">Superior Family</h3>
+          <h6>From $109/Night</h6>
+          <button type="button" class=" two btn border border-2 px-4 border-light rounded-0 text-light">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--Footer-->
+  <footer class="foot-sec">
+    <section class="container py-5">
+      <div class="row" data-aos="zoom-in-up">
+        <div class="col-md-6 row">
+          <!--Contact Information-->
+          <address class="col-lg-6">
+            <h3 class="fs-5 pb-2">Contact Information</h3>
+            <h6 class="pb-2">Champ de Mars, 5 Avenue Anatole France, 75007</h6>
+            <p class="m-0"><a href="telto:+1 2345 6789" class="text-dark"> +1 2345 6789</a></p>
+            <p><a href="telto:+1 5678 9123" class="text-dark"> +1 5678 9123</a></p>
+          </address>
+
+          <!--Useful Links-->
+          <div class="col-lg-6">
+            <h3 class="fs-5 pb-2">Useful Links</h3>
+            <ul class="p-0 pb-3">
+              <li><a href="" class="text-dark">Accommodation</a></li>
+              <li><a href="" class="text-dark">Contact</a></li>
+              <li><a href="" class="text-dark">Meeting &amp; Events</a></li>
+              <li><a href="" class="text-dark">Reservations</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 row">
+          <!--Payment Methods-->
+          <div class="col-lg-6">
+            <h3 class="fs-5 pb-2">Payment Methods</h3>
+            <p class="pb-3">
+              Paypal &amp; all major credit cards accepted. 30-day Money-back
+              Guarantee.
+            </p>
+            <div class="pb-4">
+              <img src="img/img/cards5.png" alt="cards5" class="img-fluid" />
+            </div>
+          </div>
+
+          <!--Newsletter-->
+          <div class="col-lg-6">
+            <h3 class="fs-5">Newsletter</h3>
+            <input type="Email" placeholder="E-mail" class="form-control mb-2 py-2" />
+            <button type="button" class=" two btn border border-2  w-100 border-dark rounded-0">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center border-top border-2 d-md-flex justify-content-evenly align-items-center py-2">
+      <div>
+        <p><span class="fw-semibold">Moliere - Ignition</span> - Hotel Theme for WordPress</p>
+      </div>
+      <div>
+        <p>A theme by CSSIgniter - Powered by WordPress</p>
+      </div>
+    </div>
+  </footer>
+  <!--Script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/counterup2/2.0.2/index.min.js"></script>
-  <script src="jquery.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

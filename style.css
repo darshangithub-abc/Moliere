@@ -1,150 +1,160 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 
-.hero{
-    background-image:linear-gradient(#ffffff80,#ffffff80) ,url(../Images/Background/hero_bg.jpg);
-    background-position: 50% 50%;
+:root{
+    --stdbackColor:#282828;    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.img-flag{
+    width: 25px;
+    height: 15px;
+}
+.cta-sec{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../Img/bg-img/cta-sec.jpg) ;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h2,h3{
+    font-size: 4rem;
+    font-family: 'Lora', serif;
+    width: 98%;
+}
+.cta-sec button{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+}
+.one,.two,.four{
+    font-family: 'Lora', serif;
+    font-size: 18px;
+}
+.three{
+    font-family: 'Lora', serif;
+}
+.our{
+    font-size: 35px;
+}
+.family-sec{
+    background-image:url(../Img/bg-img/bg-img1.jpg);
+    background-size: cover;
+    /* height: 200px; */
+}
+.family-sec:hover{
+   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../Img/bg-img/bg-img1.jpg);;
+}
+.solo-sec{
+    background-size: cover;
+    background-image:url(../Img/bg-img/bg-img2.jpg);
+    /* height: 200px; */
+}
+.solo-sec:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Img/bg-img/bg-img2.jpg);
+}
+.single-img{
+    background-size: cover;
+    background-image:url(../Img/img/superior_double-615x410.jpg)
+}
+.single-img:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Img/img/superior_double-615x410.jpg)
+}
+.double-img{
+    background-size: cover;
+    background-image:url(../Img/img/standard_single-615x410.jpg)
+}
+.double-img:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Img/img/standard_single-615x410.jpg)
+}
+.family-img{
+    background-size: cover;
+    background-image:url(../Img/img/standard_double-615x410.jpg)
+}
+.family-img:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Img/img/standard_double-615x410.jpg)
+}
+.foot-sec{
+    background-image: url(../Img/bg-img/bg_footer2.jpg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 660px;
-}
-.owner{
-    font-family: 'Rubik', sans-serif;
-
-}
-.one{
-    padding-top: 150px;
-    font-family: 'Rubik', sans-serif;
-
-}
-.one h1{
-    color: #b49c73; 
-    font-size: 40px;
-}
-.button{
-    background-color:#b49c73;
-  
-}
-.main{
-    background-color: #37373F;
-    font-size: 17px;
-}
-.main h1{
-    font-family: 'Rubik', sans-serif; 
-}
-.first{
-    font-size: 16px;
-}
-.second p{
-    color: #b49c73;
-}
-.common{
-    color: #b49c73;
-}
-.main p,span{
-    color: #b2b2b8;
-}
-.main button{
-    background-color:#b49c73;
-    font-size: 14px;
-}
-.old{
-    height: 60px;
-    width: 60px;
-}
-.two{
-    font-size: 70px;
-}
-.clients{
-    background-color: #2d2d34;
-    font-family: 'Rubik', sans-serif; 
-}
-.carousel{
-    height: 410px;
-}
-.clip{
-    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 15% 86%, 1% 99%, 0 100%);
-}
-.official{
-    height: 50px;
-    width: 50px;
-}
-.most{
-    margin: -30px 0 0 30px;
-}
-.arrow{
-    padding: 205px 110px 0px 120px;
-}
-.expertise{
-    background-color: #37373F;
-    font-family: 'Rubik', sans-serif;
-}
-.new{
-    width: 60%;
-}
-.last{
-    background-image:linear-gradient(rgba(0, 0, 0 ,0.3), rgba(0 ,0 ,0 ,0.3)),url(../Images/Background/hero_bg.jpg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 435px;
-}
-.new-one{
-    height: 435px;
-}
-li:hover{
-    color: #ffffff !important;
-    text-decoration: underline !important;
 }
 
-@media (min-width:768px){
-    .clip{
-        clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 72% 80%, 6% 80%, 0% 100%, 0% 100%)
+
+@media (min-width:768px) {
+   
+    h2{
+        width: 100%;
     }
-    .most{
-        margin: -15px 0 0 35px;
+    .img-city1{
+        height: 194px;
+        width: 750px;
     }
-    .arrow{
-        padding: 125px 330px 0px 330px;
+    .my-img-1{
+        overflow: hidden;
+        width: 200px;
+        /* height: 260px */
     }
-    .carousel{
-        height: 250px;
-    }
-    .new{
-        width: 57%;
+    .my-img{
+        overflow: hidden;
+        width: 340px;
+        /* height: 260px */
     }
 }
-
-@media (min-width:992px){
-    .one h1{
-        font-size: 50px;
+@media (min-width:992px) {
+    /* .img-city{
+        height: 206px;
+        width: 460px;
     }
-    .arrow{
-        padding: 175px 430px 0px 460px;
+    .img-city1{
+        height: 206px;
+        width: 750px;
+    } */
+    .img-city1{
+        height: 300px;
+        width: 750px;
     }
-    .carousel{
-        height: 350px;
-    }
-    .new{
-        width: 70%;
-    }
-    .three{
-        width: 70%;
-        margin-left: 160px;
-    }
-    .last{
-        background-position: 50% 0%;
+    .my-img{
+        overflow: hidden;
+        width: 340px;
+        height: 260px
     }
 }
 @media(min-width:1200px){
-    .one h1{
-        font-size: 60px;
-    }
-    .arrow{
-        padding: 175px 545px 0px 545px;
+    
+    .my-img-1{
+        overflow: hidden;
+        width: 200px;
+        height: 260px
     }
 }
 
-
-
-
+@media (min-width:1400px) {
+    .cta-sec{
+        background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../Img/bg-img/cta-sec.jpg) ;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .my-img{
+        overflow: hidden;
+        width: 340px;
+        height: 300px
+    }
+    .my-img-1{
+        overflow: hidden;
+        width: 200px;
+        height: 300px
+    }
+}
